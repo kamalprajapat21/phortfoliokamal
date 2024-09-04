@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import lab from "../../Assets/Projects/lab.jfif";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import pharmacy from "../../Assets/Projects/pharmacy.jfif";
 import chatify from "../../Assets/Projects/chatify.png";
 import task from "../../Assets/Projects/task.jfif";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import pwa from "../../Assets/Projects/pwa.jfif";
 
 function Projects() {
   return (
@@ -27,42 +27,40 @@ function Projects() {
               imgPath={task}
               isBlog={false}
               title="Task Management"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="A robust task management tool built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers features for secure user authentication, task CRUD operations, prioritization, and categorization. Users can manage tasks efficiently through a responsive interface, with real-time updates ensuring seamless interaction and organization."
+              ghLink="https://github.com/kamalprajapat21/task-manager-master"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={pwa}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Patient Web Application"
+              description="  A Patient Web Application built with React and MongoDB. It manages patient details, handles urgent medical cases, and facilitates home care bookings. The app supports real-time updates, notifications, and cost calculations for various care type"
+              // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              demoLink="https://user.dooper.in/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={pharmacy}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Pharmacy"
+              description="A web application developed with React and MongoDB for efficient pharmacy management. It handles prescription processing, inventory tracking, and order management. Features include real-time updates, user-friendly interfaces, and integration with medical records for streamlined operations."
+              demoLink="http://pharmacy.dooper.in/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={lab}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="LAB"
+              description="A web application created with React and MongoDB for managing laboratory operations. It streamlines sample tracking, test result processing, and lab reports generation. Features include real-time data updates, user management, and integration with medical records for efficient lab management."
+              demoLink="https://lab.dooper.in/"
             />
           </Col>
 
